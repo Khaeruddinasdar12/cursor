@@ -92,7 +92,7 @@ class SiteSettings
                     'brand_highlight' => ['label' => 'Nama merek (bagian emas)', 'default' => 'IAIN Bone'],
                     'brand_tagline' => ['label' => 'Tagline navbar', 'default' => 'Penelitian & Pengabdian Masyarakat'],
                     'footer_brand_tagline' => ['label' => 'Tagline footer', 'default' => 'Penelitian & Pengabdian'],
-                    'site_logo' => ['label' => 'Logo (opsional)', 'type' => 'image', 'help' => 'Kosongkan untuk memakai logo SVG bawaan.'],
+                    'site_logo' => ['label' => 'Logo (opsional)', 'type' => 'image', 'help' => 'Kosongkan untuk memakai logo IAIN Bone bawaan.'],
                     'favicon' => ['label' => 'Favicon (opsional)', 'type' => 'image', 'help' => 'Kosongkan untuk memakai ikon bawaan.'],
                 ],
             ],

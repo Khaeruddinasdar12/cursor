@@ -31,6 +31,8 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->profile()
             ->brandName('LPPM IAIN Bone — Admin')
+            ->brandLogo(fn () => view('filament.brand'))
+            ->favicon(asset('images/favicon.png'))
             ->font('Plus Jakarta Sans')
             ->colors([
                 'primary' => Color::Emerald,

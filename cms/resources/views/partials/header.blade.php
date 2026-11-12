@@ -11,11 +11,8 @@
 
       <!-- Brand -->
       <a href="{{ site_url('#beranda') }}" class="flex items-center gap-3 shrink-0 group">
-        <div class="relative">
-          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-bone-700 to-bone-900 grid place-items-center ring-2 ring-gold-400 ring-offset-2 group-hover:scale-105 transition">
-            @include('partials.logo')
-          </div>
-          <span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-gold-400 ring-2 ring-white"></span>
+        <div class="shrink-0 group-hover:scale-105 transition">
+          @include('partials.logo', ['class' => 'h-14 w-auto'])
         </div>
         <div class="leading-tight">
           <p class="font-extrabold text-bone-900 text-[17px] tracking-tight">{{ setting('brand_name') }} <span class="text-gold-600">{{ setting('brand_highlight') }}</span></p>

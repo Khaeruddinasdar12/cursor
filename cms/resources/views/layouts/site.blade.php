@@ -8,7 +8,7 @@
 @if (setting('favicon'))
 <link rel="icon" href="{{ \Illuminate\Support\Facades\Storage::disk('public')->url(setting('favicon')) }}" />
 @else
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2304612f'/%3E%3Cpath d='M50 18 L74 40 L74 74 L26 74 L26 40 Z' fill='none' stroke='%23eab308' stroke-width='6'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}" />
 @endif
 
 <!-- Tailwind -->

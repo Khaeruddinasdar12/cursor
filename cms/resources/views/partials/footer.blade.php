@@ -12,8 +12,8 @@
 
       <div class="lg:col-span-4">
         <div class="flex items-center gap-3 mb-5">
-          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-bone-600 to-bone-800 grid place-items-center ring-2 ring-gold-400 ring-offset-2 ring-offset-bone-950">
-            @include('partials.logo', ['footer' => true])
+          <div class="shrink-0">
+            @include('partials.logo', ['class' => 'h-14 w-auto'])
           </div>
           <div>
             <p class="font-extrabold text-white text-[16px]">{{ setting('brand_name') }} {{ setting('brand_highlight') }}</p>
