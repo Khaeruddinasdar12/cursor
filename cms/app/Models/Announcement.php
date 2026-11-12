@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use App\Models\Concerns\Listable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Announcement extends Model
+{
+    use HasFactory, Listable;
+
+    protected $guarded = [];
+
+    protected function casts(): array
+    {
+        return ['is_active' => 'boolean'];
+    }
+}
