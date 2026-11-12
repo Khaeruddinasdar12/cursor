@@ -11,7 +11,9 @@
         {{ setting('hero_badge') }}
       </div>
 
-      <p class="font-arabic text-3xl sm:text-4xl text-gold-200 mb-4" dir="rtl">{{ setting('hero_arabic') }}</p>
+      @if (setting('hero_arabic'))
+        <p class="font-arabic text-3xl sm:text-4xl text-gold-200 mb-4" dir="rtl">{{ setting('hero_arabic') }}</p>
+      @endif
 
       <h1 class="font-display font-extrabold text-[38px] sm:text-[48px] lg:text-[56px] leading-[1.06] tracking-tight mb-6">
         {{ setting('hero_title_line1') }}<br class="hidden sm:block">

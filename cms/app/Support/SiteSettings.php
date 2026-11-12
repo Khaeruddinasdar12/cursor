@@ -122,7 +122,7 @@ class SiteSettings
                 'label' => 'Hero',
                 'fields' => [
                     'hero_badge' => ['label' => 'Lencana', 'default' => 'INSTITUT AGAMA ISLAM NEGERI BONE'],
-                    'hero_arabic' => ['label' => 'Teks Arab', 'default' => 'وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ'],
+                    'hero_arabic' => ['label' => 'Teks Arab (opsional)', 'default' => '', 'help' => 'Kosongkan agar tidak ditampilkan di hero.'],
                     'hero_title_line1' => ['label' => 'Judul (baris 1)', 'default' => 'Lembaga Penelitian dan'],
                     'hero_title_highlight' => ['label' => 'Judul (baris 2, emas)', 'default' => 'Pengabdian kepada Masyarakat'],
                     'hero_description' => ['label' => 'Deskripsi', 'type' => 'textarea', 'default' => 'Pusat tata kelola penelitian, publikasi karya ilmiah, dan pengabdian kepada masyarakat di lingkungan IAIN Bone — menghadirkan informasi yang terintegrasi, transparan, dan terstruktur bagi dosen, mahasiswa, serta mitra.'],

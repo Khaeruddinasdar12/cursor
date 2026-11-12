@@ -25,6 +25,15 @@ class PublicSiteTest extends TestCase
         $this->seed(CmsContentSeeder::class);
     }
 
+    public function test_hero_arabic_text_is_shown_only_when_set(): void
+    {
+        $this->get('/')->assertDontSee('font-arabic', false);
+
+        SiteSettings::save(['hero_arabic' => 'بِسْمِ اللَّهِ']);
+
+        $this->get('/')->assertSee('بِسْمِ اللَّهِ')->assertSee('font-arabic', false);
+    }
+
     public function test_home_page_renders_all_seeded_sections(): void
     {
         $response = $this->get('/');
@@ -32,7 +41,7 @@ class PublicSiteTest extends TestCase
         $response->assertOk()
             ->assertSee('LPPM IAIN Bone — Lembaga Penelitian dan Pengabdian kepada Masyarakat', false)
             ->assertSee('Pengabdian kepada Masyarakat')
-            ->assertSee('وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ')
+            ->assertDontSee('font-arabic', false)
             ->assertSee('Membangun Ekosistem Riset yang Berdaya Guna')
             ->assertSee('Lima Pusat Layanan LPPM')
             ->assertSee('PUSAT 05')
